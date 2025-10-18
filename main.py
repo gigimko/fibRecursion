@@ -5,4 +5,9 @@ def fib(inp):
         return 1
     return fib(inp - 1) + fib(inp - 2)
 
-print(fib(4))
+def powerOf(inp, power):
+    if power == 0:
+        return 1
+    return powerOf(inp, (power - 1)) * inp
+
+print(powerOf(3, 2))
